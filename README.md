@@ -3,7 +3,7 @@
 
 This is an extension for Azure DevOps to load Rest data into a simple picklist.
 
-https://marketplace.visualstudio.com/items?itemName=dedac.RestDataMappingPicklist
+https://marketplace.visualstudio.com/items?itemName=OscarArguedasBarboza.RestDataMappingPicklist
 
 You can map additional data from the same rest call to other fields in the Work Item
 

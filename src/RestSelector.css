@@ -1,7 +1,86 @@
-div.work-item-label label {
-    color: var(--text-secondary-color,rgba(0, 0, 0, .55));
-    font-size: 12px;
-    margin-bottom: 0;
-    padding-bottom: 1px;
-    padding-left: 4px;
+/* Main container for the dropdown */
+.dropdown {
+    position: relative;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other elements in the iframe */
+    height: 50px; /* Collapsed height */
+    transition: height 0.3s ease; /* Smooth transition for expanding/collapsing */
+}
+
+/* Styling for the TextField input box */
+.dropdown .od-textfield {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Hover state for the TextField */
+.dropdown .od-textfield:hover {
+    border-color: #0078d4; /* Light blue border on hover */
+}
+
+/* Focus state for the TextField */
+.dropdown .od-textfield:focus {
+    border-color: #0078d4; /* Blue border on focus */
+    box-shadow: 0 0 0 1px rgba(0, 120, 212, 0.5); /* Slight shadow for focus */
+}
+
+/* Expanded state of the dropdown */
+.dropdown.expanded {
+    height: 220px; /* Expanded height */
+}
+
+/* Dropdown list wrapper */
+.dropdown .od-list-wrapper {
+    position: absolute;
+    max-height: 180px; /* Set max height with scrollable area */
+    overflow-y: auto; /* Scroll when content exceeds max height */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Ensure it's above other elements in the iframe */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for the dropdown */
+}
+
+/* Individual dropdown items */
+.dropdown .od-list-wrapper .od-list .od-list-item td {
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+/* Hover state for dropdown items */
+.dropdown .od-list-wrapper .od-list .od-list-item td:hover {
+    background-color: rgba(0, 120, 212, 0.1); /* Light blue hover color */
+    border-color: rgba(0, 120, 212, 0.1); /* Blue border on hover */
+}
+
+/* Content within each list item */
+.dropdown .od-list-wrapper .od-list .od-list-item .od-content {
+    font-size: 0.75rem;
+    flex: auto;
+    padding: 4px;
+}
+
+/* Spinner styling to center it within the form item */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* No results message */
+.dropdown .no-results {
+    padding: 12px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #666;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
 }

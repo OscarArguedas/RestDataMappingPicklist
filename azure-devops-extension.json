@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1.0,
     "id": "RestDataMappingPicklist",
-    "publisher": "dedac",
-    "version": "0.4.0",
+    "publisher": "OscarArguedasBarboza",
+    "version": "1.0.0",
     "name": "Rest Data Mapping Picklist",
-    "description": "Load work item values from a specified REST endpoint and map additional REST data to your work item",
+    "description": "Load work item values from a specified REST endpoint and map additional REST data to your work item. Fork from https://github.com/Dedac/RestDataMappingPicklist",
     "public": true,
     "icons": {
         "default": "img/Logo.png"
@@ -19,7 +19,7 @@
     ],
     "repository": {
         "type": "git",
-        "uri": "https://github.com/Dedac/RestDataMappingPicklist"
+        "uri": "https://github.com/OscarArguedas/RestDataMappingPicklist"
     },
     "tags": [
         "Work Items",

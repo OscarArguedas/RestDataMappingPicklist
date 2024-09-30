@@ -47,4 +47,4 @@ Sample Settigns for Calling this Service
 
 `Custom.` are custom field names in Azure DevOps, use the fields names that you want data from the rest service mapped to.
 
-You may have to Add https://dedac.gallerycdn.vsassets.io to the CORS allowed domains on the rest service that you are calling to use the extension. This isn't necessary for calling back into the Azure DevOps API
+You may have to Add https://oscararguedasbarboza.gallerycdn.vsassets.io to the CORS allowed domains on the rest service that you are calling to use the extension. This isn't necessary for calling back into the Azure DevOps API
